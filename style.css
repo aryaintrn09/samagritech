@@ -403,24 +403,25 @@ section.visible {
 /* Mobile Devices */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none; /* Hide menu by default */
+        display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
         background-color: var(--white-color);
         position: absolute;
-        top: 60px; /* Adjust based on navbar height */
+        top: 60px; /* Sesuaikan dengan tinggi navbar Anda */
         left: 0;
         padding: 1rem 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 999; /* INI ADALAH KUNCI PERBAIKANNYA */
     }
     
     .nav-icons {
-        display: none; /* Hide icons as well on small screens */
+        display: none;
     }
 
     .nav-menu.active {
-        display: flex; /* Show when active */
+        display: flex; 
     }
 
     .nav-menu li {
@@ -428,11 +429,11 @@ section.visible {
     }
     
     .navbar .container {
-        position: relative; /* Needed for menu positioning */
+        overflow: visible;
     }
     
     .menu-toggle {
-        display: flex; /* Show hamburger icon */
+        display: flex;
     }
 
     .header-content h1 {

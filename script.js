@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Hamburger Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
-    // Create and inject the hamburger icon into the navbar container
-    const toggle = document.createElement('div');
-    toggle.classList.add('menu-toggle');
-    toggle.innerHTML = `<div class="bar"></div><div class="bar"></div><div class="bar"></div>`;
-    document.querySelector('.navbar .container').appendChild(toggle);
-
-    // Add click event to the hamburger icon
-    toggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 
     // Portfolio Slider
     let currentSlide = 0;
@@ -52,16 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (sectionTop < triggerBottom) {
                 section.classList.add('visible');
-            } else {
-                // Optional: remove class to re-animate on scroll up
-                // section.classList.remove('visible');
             }
         });
     };
 
     window.addEventListener('scroll', revealSection);
-    // Initial check in case sections are already in view
-    revealSection();
+    revealSection(); // Initial check
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
