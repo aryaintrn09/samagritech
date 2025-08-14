@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development| Application Development | SamagriTech - Your Trusted Tech Partner</title>
+    <link rel="icon" type="image/x-icon" href="favico.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="SamagriTech Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="mailto:mail@samagritech.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://instagram.com/samagritech_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/6281776896001" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            </div>
+    </nav>
+
+    <header id="home" class="header">
+        <div class="header-content">
+            <h1>SAMAGRITECH</h1>
+            <h4>Your trusted partner for website development, application development, and technical installations for software and Computer OS.</h4>
+            <a href="#contact" class="btn">Get a Free Consultation</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-us">
+        <div class="container about-content">
+            <div class="about-logo">
+                <img src="images/lo1go.png" alt="SamagriTech Logo">
+            </div>
+            <div class="about-text">
+                <h2>About SamagriTech</h2>
+                <p>
+                    The name SamagriTech embodies our core philosophy; we see ourselves not merely as developers, but as digital architects. Inspired by the word "Samagri," which means 'ingredients' or 'materials', we meticulously assemble every element from precise lines of code and intuitive interface designs to relevant business strategies to build robust, high-value digital assets. This philosophy is what united our founding team of nine university students, who share a collective passion and vision for bringing a fresh perspective to the technology landscape. Fueled by this youthful energy and innovation, our mission is to be a trusted technology partner that delivers efficient and impactful digital solutions to drive our clients' success. To achieve this, we are guided by a clear vision: to consistently build high-quality digital products, provide solution-oriented consulting, foster a collaborative environment that nurtures IT talent, and uphold the highest standards of ethics and professionalism in all that we do.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Website Development</h3>
+                    <p>We create stunning, responsive, and user-friendly websites tailored to your brand's needs.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Application Development</h3>
+                    <p>From concept to launch, we build powerful and intuitive applications.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Software & OS Installation</h3>
+                    <p>Our experts provide seamless and reliable software and operating system installations and configurations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="images/portfolio1.jpg" alt="Portfolio Image 1">
+                        <div class="slide-caption">
+                            <h3>Politeunivers</h3>
+                            <a href="https://politeunivers.com/" class="btn-slide">View</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio2.jpg" alt="Portfolio Image 2">
+                        <div class="slide-caption">
+                            <h3>DishLish</h3>
+                            <a href="https://food-landing-page-template-isa.vercel.app/" class="btn-slide">View</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio3.jpg" alt="Portfolio Image 3">
+                        <div class="slide-caption">
+                            <h3>Yayasan Tat Twam Asi</h3>
+                            <a href="https://yayasantattwamasi.online/home" class="btn-slide">View</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/portfolio4.jpg" alt="Portfolio Image 3">
+                        <div class="slide-caption">
+                            <h3>Arya Intaran</h3>
+                            <a href="https://aryaintaran.samagritech.com" class="btn-slide">View</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Ready to start your next project with us? Contact us today!</p>
+            <div class="contact-info">
+                <a href="https://wa.me/6281776896001" target="_blank" class="contact-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+62 817-7689-6001</span>
+                </a>
+                <a href="mailto:mail@samagritech.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>mail@samagritech.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 SamagriTech. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
